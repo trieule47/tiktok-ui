@@ -3,9 +3,18 @@
 
 :root {
     --primary: #fe2c55;
+    --white: white;
+    --black: #000;
+    --text-color: #161823;
+    //Default layout
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-spacer: 24px;
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -18,4 +27,18 @@ body {
     font-size: 1.6rem;
     font-family: 'Oswald';
     text-rendering: optimizeSpeed;
+}
+
+//Custom tippy tooltip
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        background: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
 }
